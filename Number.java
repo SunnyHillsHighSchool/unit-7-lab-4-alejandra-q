@@ -1,6 +1,6 @@
 //(c) A+ Computer Science
 //www.apluscompsci.com
-//Name -
+//Name Alejandra Quismorio
 
 
 //write the Number class
@@ -9,16 +9,31 @@
 //to guide you
 
 //header for Number class
-
+public class Number{
 //private instance variable (must be an Integer)
+private Integer num;
+//constructor (default and one parameter)
+public Number()
+{
+  num = 0;
+}
 
-//constructor
-
+public Number(Integer n)
+{
+  num = n;
+}
 
 //getter method
-
+public Integer getNumber()
+{
+  return num;
+}
 
 //setter method
+public void setNumber(Integer newNum)
+{
+  num = newNum;
+}
 
 //isOdd method
 
@@ -26,3 +41,8 @@
 
 
 //toString
+public String toString()
+{
+  return num + "is Odd and is Perfect";
+}
+}
